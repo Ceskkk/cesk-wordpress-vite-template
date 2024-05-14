@@ -1,0 +1,21 @@
+{
+  "name": "cesk-wordpress-vite-template",
+  "version": "1.0.0",
+  "description": "Wordpress vite template by Cesk",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "author": "Cesk",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.2.0",
+    "sass": "^1.77.1",
+    "vite": "^5.2.11"
+  }
+}

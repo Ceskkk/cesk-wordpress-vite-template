@@ -1,0 +1,31 @@
+// Media queries
+@mixin for-phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+// Placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+// Hover
+@mixin hover {
+  @media not all and (hover: none) {
+    &:hover {
+      @content;
+    }
+  }
+}
