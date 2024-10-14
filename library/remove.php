@@ -1,5 +1,10 @@
 <?php
 
+/* Remove post types sections */
+add_action( 'init', function() {
+  remove_post_type_support( 'page', 'editor' );
+}, 999);
+
 /* Remove comments */
 // Disable support for comments and trackbacks in post types
 function disable_comments_post_types_support() {
@@ -49,5 +54,10 @@ function disable_comments_dashboard() {
 }
 add_action('admin_init', 'disable_comments_dashboard');
 
+/* Remove margin top */
+function remove_admin_login_header() {
+  remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_login_header');
 
 ?>

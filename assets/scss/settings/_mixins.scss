@@ -4,6 +4,16 @@
     @content;
   }
 }
+@mixin for-tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin for-laptop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
 
 // Placeholder
 @mixin placeholder {

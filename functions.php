@@ -8,5 +8,3 @@ add_action('after_setup_theme', function (){
   // Remove sections and features
   require_once('library/remove.php');
 });
-
-?>
